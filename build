@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#CC=arm-arago-linux-gnueabi-
+#CC=/home/chenxibing/ti-sdk-am335x-evm-06.00.00.00/linux-devkit/sysroots/i686-arago-linux/usr/bin/arm-linux-gnueabihf-
+CC=/home/ctools/i686-arago-linux/usr/bin/arm-linux-gnueabihf-
+
+#make CROSS_COMPILE=$CC ARCH=arm distclean
+#make CROSS_COMPILE=$CC ARCH=arm m3352_defconfig
+#make CROSS_COMPILE=$CC ARCH=arm menuconfig
+make CROSS_COMPILE=$CC ARCH=arm uImage  -j8
+#make CROSS_COMPILE=$CC ARCH=arm modules
+#sudo make CROSS_COMPILE=$CC ARCH=arm modules_install
+
+#cp -v arch/arm/boot/uImage ../images/
+cp -v arch/arm/boot/uImage /tmp
+
+

@@ -1,0 +1,24 @@
+chenxibing@kingyee-laptop:~/work/am335x/m335x/linux-3.2.0-psp04.06.00.11$ grep MACH_AM335XEVM -R .
+./.config.old:CONFIG_MACH_AM335XEVM=y
+./.pc/0002-am33xx-Enable-CONFIG_AM33XX_SMARTREFLEX.patch/arch/arm/configs/am335x_evm_defconfig:CONFIG_MACH_AM335XEVM=y
+./.pc/0001-mach-omap2-pm33xx-Disable-VT-switch.patch/arch/arm/mach-omap2/Kconfig:config MACH_AM335XEVM
+./.pc/0001-mach-omap2-pm33xx-Disable-VT-switch.patch/arch/arm/configs/am335x_evm_defconfig:CONFIG_MACH_AM335XEVM=y
+./.pc/0001-am33xx-Add-SmartReflex-support.patch/arch/arm/mach-omap2/Makefile:obj-$(CONFIG_MACH_AM335XEVM)		+= board-am335xevm.o
+./.pc/0001-am335x-Add-crypto-driver-settings-to-defconfig.patch/arch/arm/configs/am335x_evm_defconfig:CONFIG_MACH_AM335XEVM=y
+./arch/arm/mach-omap2/Kconfig:config MACH_AM335XEVM
+./arch/arm/mach-omap2/Makefile:obj-$(CONFIG_MACH_AM335XEVM)		+= board-am335xevm.o
+./arch/arm/configs/am335x_evm_defconfig:CONFIG_MACH_AM335XEVM=y
+./arch/arm/configs/tisdk_am335x-evm_defconfig:CONFIG_MACH_AM335XEVM=y
+./arch/arm/tools/mach-types:am335xevm		MACH_AM335XEVM		AM335XEVM		3589
+./include/generated/autoconf.h:#define __enabled_CONFIG_MACH_AM335XEVM 0
+./include/generated/autoconf.h:#define __enabled_CONFIG_MACH_AM335XEVM_MODULE 0
+./include/generated/mach-types.h:#ifdef CONFIG_MACH_AM335XEVM
+./sound/soc/davinci/davinci-evm.c:#ifdef CONFIG_MACH_AM335XEVM
+./sound/soc/davinci/davinci-evm.c:#ifdef CONFIG_MACH_AM335XEVM
+./sound/soc/davinci/davinci-evm.c:#ifdef CONFIG_MACH_AM335XEVM
+./drivers/video/Kconfig:	depends on (FB_DA8XX && MACH_AM335XEVM)
+./.config:# CONFIG_MACH_AM335XEVM is not set
+./patches/0001-mach-omap2-pm33xx-Disable-VT-switch.patch: CONFIG_MACH_AM335XEVM=y
+./config-m3352:# CONFIG_MACH_AM335XEVM is not set
+
+
